@@ -1,0 +1,101 @@
+/* Write some CSS below */
+body {
+    font-family: 'Urbanist', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.banner {
+    background-image: url("/images/background.jpg");
+    color: white;
+    padding: 150px 0px;
+    text-align: center; 
+    background-size: cover;
+
+}
+
+.btn-blue {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: 4px; 
+}
+
+.banner p {
+    font-size: 20px;
+    opacity: 0.6;
+    margin-bottom: 40px;
+}
+
+.btn-blue:hover {
+    background-color: darkblue;
+    transition: all .4s ease;
+}
+
+.card-white {
+    box-shadow: 4px 4px 30px lightgray;
+    /* width: 260px;  */
+    border-radius: 8px; 
+    padding: 18px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 24px;
+}
+
+
+.card-white img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.container {
+    padding: 0px 120px;
+    margin-bottom: 40px; 
+    justify-content: center;
+    padding: 18px;
+}
+
+.footer {
+    background: black;
+    color: white;
+    padding: 60px 120px 
+}
+
+/* Small devices (mobile) */
+@media (min-width: 100px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+    .container {
+        padding: 0px 40px;
+    }
+}
+
+/* Medium devices (tablet) */
+@media (min-width: 768px) {
+    .cards-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .container {
+        padding: 0px 80px;
+    }
+
+}
+
+/* Large devices (desktop) */
+@media (min-width: 768px) {
+    .cards-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }  .container {
+        padding: 0px 120px;
+    }
+}
+
